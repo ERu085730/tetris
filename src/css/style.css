@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #3197d1;
+  background: linear-gradient(to right bottom, #3197d1, #194d6b);
+  height: 100vh; }
+
+.container {
+  border-radius: 3px;
+  border: 5px solid #194d6b;
+  overflow: hidden;
+  color: #3197d1;
+  background-color: #f8ae25;
+  max-width: 70rem;
+  min-height: 70rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; }
+
+.gamearea {
+  padding: 3rem;
+  background-color: #194d6b;
+  display: flex;
+  align-items: center; }
+
+.gameframe {
+  border: 1px solid black;
+  background-color: goldenrod;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
+
+.gameblock {
+  margin: 0 auto;
+  margin: 1px;
+  background-color: gold;
+  position: absolute; }
+
+.smallDiv {
+  margin: 1px;
+  position: absolute;
+  background-color: #3197d1; }
+
+.inactDiv {
+  margin: 1px;
+  position: absolute;
+  background-color: grey; }
+
+.draw_next {
+  background-color: #194d6b;
+  border: 3px solid black;
+  position: relative; }
+
+.info {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .info h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .info .score {
+    font-size: 3rem; }

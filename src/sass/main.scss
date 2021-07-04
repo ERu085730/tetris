@@ -1,0 +1,107 @@
+$color-primary: #3197d1;
+$color-secondary: #f8ae25;
+$color-third: #194d6b;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  // box-sizing: content-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-primary;
+  background: linear-gradient(to right bottom, $color-primary, $color-third);
+  // width: 100%;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 3px;
+  border: 5px solid $color-third;
+  overflow: hidden;
+  color: $color-primary;
+  background-color: $color-secondary;
+  max-width: 70rem;
+  min-height: 70rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+}
+
+.gamearea {
+  // width: 50rem;
+  padding: 3rem;
+  background-color: $color-third;
+
+  display: flex;
+  align-items: center;
+}
+
+.gameframe {
+  // margin: 1rem auto;
+  border: 1px solid black;
+  background-color: goldenrod;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameblock {
+  margin: 0 auto;
+  margin: 1px;
+  // border: 1px solid black;
+  background-color: gold;
+  position: absolute;
+}
+
+.smallDiv {
+  margin: 1px;
+  position: absolute;
+  background-color: $color-primary;
+}
+
+.inactDiv {
+  margin: 1px;
+  position: absolute;
+  background-color: grey;
+}
+
+.draw_next {
+  background-color: $color-third;
+  border: 3px solid black;
+  position: relative;
+}
+
+.info {
+  // width: 20rem;
+  margin: 0 auto;
+  padding: 2rem;
+  h2 {
+    // width: 100%;
+    // margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .score {
+    font-size: 3rem;
+  }
+}
