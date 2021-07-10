@@ -2,3 +2,7 @@
 
 ## Demo:
 https://tetris-practice.netlify.app/
+
+
+## github:
+https://github.com/ERu085730/tetris
